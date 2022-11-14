@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300&family=Roboto:wght@300;400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: 'Roboto', 'Arial', sans-serif;
+}
+
+/* Header ----------------------------------------------------------- */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 56px;
+  padding: 0 15px;
+}
+
+header .left {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+header .left img {
+  height: 20px;
+  padding-left: 15px;
+}
+
+header .center {
+  display: flex;
+  align-items: center;
+}
+
+header .center form {
+  display: flex;
+  width: 628px;
+  height: 40px;
+}
+
+header .center form input {
+  width: 100%;
+  border: 1px solid #d3d3d3;
+  border-radius: 25px 0 0 25px;
+  font-size: 1.5rem;
+  padding: 15px;
+  border-right: none;
+}
+
+header .center form button {
+  width: 60px;
+  border-radius: 0 25px 25px 0;
+  border: 1px solid #d3d3d3;
+  cursor: pointer;
+  padding-top: 4px;
+  background-color: #f8f8f8;
+}
+
+header .center form button:hover,
+header .center .mic:hover {
+  background-color: #e9e8e8;
+}
+
+header .center .mic {
+  width: 40px;
+  height: 40px;
+  background-color: #f9f9f9;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+/*header .right {
+  display: flex;
+}*/
+
+header .right a {
+  color: #000;
+  margin-left: 15px;
+}
+
+/* Content ----------------------------------------------------------- */
+
+.content {
+  height: calc(100vh - 56px);
+  display: flex;
+  background-color: #f5f1f1;
+}
+
+aside {
+  width: 240px;
+  height: 100%;
+  background-color: #fff;
+  overflow-y: auto;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0;
+  padding-right: 15px;
+}
+
+nav .nav-link {
+  display: flex;
+  align-items: center;
+  color: #000;
+  text-decoration: none;
+  padding: 10px 15px;
+}
+nav .nav-link:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+nav .nav-link span {
+  margin-left: 25px;
+  font-size: 15px;
+  font-weight: 400;
+  color: #030303;
+}
+
+nav .active {
+  background-color: #e5e5e5;
+}
+
+nav .nav-link .active-span {
+  font-weight: 600;
+}
+
+hr {
+  height: 1px;
+  background-color: #e5e5e5;
+  border: none;
+  margin: 10px 0;
+}
+
+nav p {
+  font-size: 1.5rem;
+  color: #606060;
+  font-weight: 600;
+  padding: 8px 16px;
+  text-transform: uppercase;
+}
+
+nav .channel-img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  padding: 35px 15px;
+  border-top: 1px solid #ddd;
+  overflow-y: auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.container .video {
+  width: 255px;
+  margin-bottom: 40px;
+  cursor: pointer;
+}
+.container .video:hover {
+  transition-delay: 3s;
+  transform: scale(1.3);
+}
+
+.thumbnail {
+  width: 100%;
+  height: 150px;
+  margin-bottom: 12px;
+}
+
+.thumbnail img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+.video-info {
+  display: flex;
+}
+
+.creator-img img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+}
+
+.title a {
+  text-decoration: none;
+}
+
+.title .video-title {
+  color: rgb(3, 3, 3);
+  font-size: 1.7rem;
+  max-width: 276px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  overflow: hidden;
+}
+
+.title .video-creator,
+.title span {
+  color: rgb(83, 83, 83);
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+.video-creator:hover {
+  color: #000;
+}
